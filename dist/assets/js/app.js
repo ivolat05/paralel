@@ -19,11 +19,12 @@ $(function () {
 		if (btnActive) {
 			btnActive.forEach(item => {
 				item.addEventListener('click', () => {
+					let panel = item.lastElementChild;
 					if (item.classList.contains('--active')) {
 						item.classList.remove('--active')
-						item.style.maxHeight = null;
+						panel.style.maxHeight = null;
 					} else {
-						let panel = item.lastElementChild;
+
 						for (let i = 0; i < btnActive.length; i++) {
 							if (btnActive[i].classList.contains('--active')) {
 								btnActive[i].classList.remove('--active')
@@ -39,7 +40,7 @@ $(function () {
 			})
 		}
 	}
-	accordionClick(".header-list-arrow")
+	accordionClick(".rooms-accordion")
 
 
 
@@ -68,16 +69,14 @@ $(function () {
 
 	//  slaider
 
-	$(".main-slaider").slick({
+	$(".rooms-slaider").slick({
 		slidesToShow: 1,
 		slidesToScroll: 1,
-		dots: true,
+		dots: false,
 		infinite: true,
-		autoplay: true,
-		autoplaySpeed: 2000,
 		arrows: true,
-		nextArrow: $(".main__slick-next"),
-		prevArrow: $(".main__slick-prev"),
+		nextArrow: $(".rooms__slick-next"),
+		prevArrow: $(".rooms__slick-prev"),
 	});
 
 })
