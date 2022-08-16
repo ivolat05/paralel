@@ -89,4 +89,24 @@ $(function () {
 		nextArrow: $(".restaurant__slick-next"),
 		prevArrow: $(".restaurant__slick-prev"),
 	});
+
+	$('.interior-slaider-head').slick({
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		arrows: true,
+		dots: false,
+		fade: true,
+		asNavFor: '.interior-slaider-body',
+		nextArrow: $(".interior__slick-next"),
+		prevArrow: $(".interior__slick-prev"),
+
+	});
+	$('.interior-slaider-body').slick({
+		slidesToShow: 4,
+		slidesToScroll: 1,
+		asNavFor: '.interior-slaider-head',
+		dots: false,
+		arrows: false,
+		focusOnSelect: true
+	});
 })
