@@ -12,6 +12,15 @@ $(function () {
 		duration: 1150,
 		once: true
 	});
+
+	// скролл
+	$(".scroll-link").click(function () {
+		var target = $(this).attr('href');
+		$('html, body').animate({
+			scrollTop: $(target).offset().top - 100
+		}, 1000);
+		return false;
+	});
 	// accordion
 	// button контейнер содержащий тело аккордиона
 	function accordionClick(button) {
@@ -172,4 +181,14 @@ $(function () {
 		}
 	}
 	reviewsSlaider()
+
+	$(".promo-slaider").slick({
+		slidesToShow: 3,
+		slidesToScroll: 1,
+		dots: false,
+		infinite: false,
+		arrows: true,
+		nextArrow: $(".promo__slick-next"),
+		prevArrow: $(".promo__slick-prev"),
+	});
 })
