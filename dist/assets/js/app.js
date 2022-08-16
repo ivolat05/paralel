@@ -79,4 +79,14 @@ $(function () {
 		prevArrow: $(".rooms__slick-prev"),
 	});
 
+	$(".restaurant-slaider").slick({
+
+		slidesToScroll: 1,
+		dots: false,
+		infinite: true,
+		variableWidth: true,
+		arrows: true,
+		nextArrow: $(".restaurant__slick-next"),
+		prevArrow: $(".restaurant__slick-prev"),
+	});
 })
