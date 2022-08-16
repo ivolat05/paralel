@@ -109,4 +109,18 @@ $(function () {
 		arrows: false,
 		focusOnSelect: true
 	});
+
+	$(".reviews-slaider").slick({
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		dots: false,
+		infinite: false,
+		speed: 1500,
+		initialSlide: 2,
+		arrows: true,
+		rows: 0,
+		nextArrow: $(".reviews__slick-next"),
+		prevArrow: $(".reviews__slick-prev"),
+	});
+
 })
