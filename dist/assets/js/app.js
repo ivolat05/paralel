@@ -110,17 +110,66 @@ $(function () {
 		focusOnSelect: true
 	});
 
-	$(".reviews-slaider").slick({
+	$("#reviews-slaider-booking").slick({
 		slidesToShow: 1,
 		slidesToScroll: 1,
 		dots: false,
-		infinite: false,
-		speed: 1500,
+		infinite: true,
+		speed: 1100,
 		initialSlide: 2,
 		arrows: true,
 		rows: 0,
-		nextArrow: $(".reviews__slick-next"),
-		prevArrow: $(".reviews__slick-prev"),
+		nextArrow: $("#reviews__next-booking"),
+		prevArrow: $("#reviews__prev-booking"),
 	});
 
+
+	// активация слайдера отзывов
+	function reviewsSlaider() {
+		let btnActive = document.querySelectorAll('.reivews-btn');
+		let reviewsBox = document.querySelectorAll('.reviews-box');
+		if (btnActive && reviewsBox) {
+			btnActive.forEach(item => {
+				item.addEventListener('click', () => {
+					let dataAttr = item.getAttribute('data-reviews');
+					let slaidId = document.getElementById(`#${dataAttr}`)
+					btnActive.forEach(item => {
+						if (item.classList.contains('active')) {
+							item.classList.remove('active');
+						}
+					})
+					reviewsBox.forEach(item => {
+						if (item.classList.contains('active')) {
+							item.classList.remove('active');
+
+						}
+
+					})
+					let reviewsSlaide = document.querySelectorAll('.reviews-slaider');
+					for (let i = 0; i < reviewsSlaide.length; i++) {
+						if (reviewsSlaide[i].classList.contains('slick-initialized')) {
+							$(`#${reviewsSlaide[i].id}`).filter('.slick-initialized').slick('unslick')
+						}
+					}
+
+					item.classList.add('active')
+					slaidId.classList.add('active')
+
+					$(`#reviews-slaider-${dataAttr}`).not('.slick-initialized').slick({
+						slidesToShow: 1,
+						slidesToScroll: 1,
+						dots: false,
+						infinite: true,
+						speed: 1100,
+						initialSlide: 2,
+						arrows: true,
+						rows: 0,
+						nextArrow: $(`#reviews__next-${dataAttr}`),
+						prevArrow: $(`#reviews__prev-${dataAttr}`),
+					});
+				})
+			})
+		}
+	}
+	reviewsSlaider()
 })

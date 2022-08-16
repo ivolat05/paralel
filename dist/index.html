@@ -1743,21 +1743,23 @@
 		
 				<div class="reviews-wrapp">
 		
-					<button aria-label="bokking" class="reivews-btn">
+					<button aria-label="bokking" class="reivews-btn active" data-reviews="booking">
 						<img src="./assets/img/reivews/reivews-btn-1.png" alt="" class="reivews-btn-img">
 					</button>
 		
 					<div class="reivews-slaider-containers">
-						<div class="reviews-box">
+						<!--booking-->
+						<div id="#booking" class="reviews-box active">
 							<div class="reviews-box-btn">
-								<button aria-label="предыдущий" class="reviews-btn reviews__slick-prev">
+								<button id="reviews__prev-booking" aria-label="предыдущий" class="reviews-btn ">
 									<svg class="reviews-btn-svg" width="13" height="24" viewBox="0 0 13 24" fill="none"
 										xmlns="http://www.w3.org/2000/svg">
 										<path d="M9.5 0.75H12.5L3.5 12L12.5 23.25H9.5L0.5 12L9.5 0.75Z" fill="white" />
 									</svg>
 		
 								</button>
-								<button aria-label="следующий" class="reviews-btn reviews__slick-next">
+								<button id="reviews__next-booking" aria-label="следующий"
+									class="reviews-btn reviews__slick-next">
 									<svg class="reviews-btn-svg" width="13" height="24" viewBox="0 0 13 24" fill="none"
 										xmlns="http://www.w3.org/2000/svg">
 										<path d="M3.5 0.75H0.5L9.5 12L0.5 23.25H3.5L12.5 12L3.5 0.75Z" fill="white" />
@@ -1765,7 +1767,7 @@
 		
 								</button>
 							</div>
-							<div class="reviews-slaider">
+							<div id="reviews-slaider-booking" class="reviews-slaider">
 								<div>
 									<div class="reviews-slaider-box">
 										<img src="./assets/img/reivews/back.png" alt="" class="reviews-slaider--active">
@@ -1848,20 +1850,372 @@
 		
 							</div>
 						</div>
+		
+						<!--ostrovok-->
+						<div id="#ostrovok" class="reviews-box">
+							<div class="reviews-box-btn">
+								<button id="reviews__prev-ostrovok" aria-label="предыдущий" class="reviews-btn ">
+									<svg class="reviews-btn-svg" width="13" height="24" viewBox="0 0 13 24" fill="none"
+										xmlns="http://www.w3.org/2000/svg">
+										<path d="M9.5 0.75H12.5L3.5 12L12.5 23.25H9.5L0.5 12L9.5 0.75Z" fill="white" />
+									</svg>
+		
+								</button>
+								<button id="reviews__next-ostrovok" aria-label="следующий"
+									class="reviews-btn reviews__slick-next">
+									<svg class="reviews-btn-svg" width="13" height="24" viewBox="0 0 13 24" fill="none"
+										xmlns="http://www.w3.org/2000/svg">
+										<path d="M3.5 0.75H0.5L9.5 12L0.5 23.25H3.5L12.5 12L3.5 0.75Z" fill="white" />
+									</svg>
+		
+								</button>
+							</div>
+							<div id="reviews-slaider-ostrovok" class="reviews-slaider">
+								<div>
+									<div class="reviews-slaider-box">
+										<img src="./assets/img/reivews/back.png" alt="" class="reviews-slaider--active">
+										<img src="./assets/img/reivews/reviews-ostrovok-1.jpg" alt=""
+											class="reviews-slaider-img">
+									</div>
+								</div>
+		
+								<div>
+									<div class="reviews-slaider-box">
+										<img src="./assets/img/reivews/back.png" alt="" class="reviews-slaider--active">
+										<img src="./assets/img/reivews/reviews-ostrovok-2.jpg" alt=""
+											class="reviews-slaider-img">
+									</div>
+								</div>
+		
+								<div>
+									<div class="reviews-slaider-box">
+										<img src="./assets/img/reivews/back.png" alt="" class="reviews-slaider--active">
+										<img src="./assets/img/reivews/reviews-ostrovok-3.jpg" alt=""
+											class="reviews-slaider-img">
+									</div>
+								</div>
+		
+								<div>
+									<div class="reviews-slaider-box">
+										<img src="./assets/img/reivews/back.png" alt="" class="reviews-slaider--active">
+										<img src="./assets/img/reivews/reviews-ostrovok-4.jpg" alt=""
+											class="reviews-slaider-img">
+									</div>
+								</div>
+		
+								<div>
+									<div class="reviews-slaider-box">
+										<img src="./assets/img/reivews/back.png" alt="" class="reviews-slaider--active">
+										<img src="./assets/img/reivews/reviews-ostrovok-5.jpg" alt=""
+											class="reviews-slaider-img">
+									</div>
+								</div>
+		
+								<div>
+									<div class="reviews-slaider-box">
+										<img src="./assets/img/reivews/back.png" alt="" class="reviews-slaider--active">
+										<img src="./assets/img/reivews/reviews-ostrovok-6.jpg" alt=""
+											class="reviews-slaider-img">
+									</div>
+								</div>
+		
+								<div>
+									<div class="reviews-slaider-box">
+										<img src="./assets/img/reivews/back.png" alt="" class="reviews-slaider--active">
+										<img src="./assets/img/reivews/reviews-ostrovok-7.jpg" alt=""
+											class="reviews-slaider-img">
+									</div>
+								</div>
+		
+								<div>
+									<div class="reviews-slaider-box">
+										<img src="./assets/img/reivews/back.png" alt="" class="reviews-slaider--active">
+										<img src="./assets/img/reivews/reviews-ostrovok-8.jpg" alt=""
+											class="reviews-slaider-img">
+									</div>
+								</div>
+		
+		
+		
+							</div>
+						</div>
+		
+						<!--hotels-->
+						<div id="#hotels" class="reviews-box">
+							<div class="reviews-box-btn">
+								<button id="reviews__prev-hotels" aria-label="предыдущий" class="reviews-btn ">
+									<svg class="reviews-btn-svg" width="13" height="24" viewBox="0 0 13 24" fill="none"
+										xmlns="http://www.w3.org/2000/svg">
+										<path d="M9.5 0.75H12.5L3.5 12L12.5 23.25H9.5L0.5 12L9.5 0.75Z" fill="white" />
+									</svg>
+		
+								</button>
+								<button id="reviews__next-hotels" aria-label="следующий"
+									class="reviews-btn reviews__slick-next">
+									<svg class="reviews-btn-svg" width="13" height="24" viewBox="0 0 13 24" fill="none"
+										xmlns="http://www.w3.org/2000/svg">
+										<path d="M3.5 0.75H0.5L9.5 12L0.5 23.25H3.5L12.5 12L3.5 0.75Z" fill="white" />
+									</svg>
+		
+								</button>
+							</div>
+							<div id="reviews-slaider-hotels" class="reviews-slaider">
+								<div>
+									<div class="reviews-slaider-box">
+										<img src="./assets/img/reivews/back.png" alt="" class="reviews-slaider--active">
+										<img src="./assets/img/reivews/reviews-hotels-1.jpg" alt="" class="reviews-slaider-img">
+									</div>
+								</div>
+		
+								<div>
+									<div class="reviews-slaider-box">
+										<img src="./assets/img/reivews/back.png" alt="" class="reviews-slaider--active">
+										<img src="./assets/img/reivews/reviews-hotels-2.jpg" alt="" class="reviews-slaider-img">
+									</div>
+								</div>
+		
+								<div>
+									<div class="reviews-slaider-box">
+										<img src="./assets/img/reivews/back.png" alt="" class="reviews-slaider--active">
+										<img src="./assets/img/reivews/reviews-hotels-3.jpg" alt="" class="reviews-slaider-img">
+									</div>
+								</div>
+		
+								<div>
+									<div class="reviews-slaider-box">
+										<img src="./assets/img/reivews/back.png" alt="" class="reviews-slaider--active">
+										<img src="./assets/img/reivews/reviews-hotels-4.jpg" alt="" class="reviews-slaider-img">
+									</div>
+								</div>
+		
+								<div>
+									<div class="reviews-slaider-box">
+										<img src="./assets/img/reivews/back.png" alt="" class="reviews-slaider--active">
+										<img src="./assets/img/reivews/reviews-hotels-5.jpg" alt="" class="reviews-slaider-img">
+									</div>
+								</div>
+		
+								<div>
+									<div class="reviews-slaider-box">
+										<img src="./assets/img/reivews/back.png" alt="" class="reviews-slaider--active">
+										<img src="./assets/img/reivews/reviews-hotels-6.jpg" alt="" class="reviews-slaider-img">
+									</div>
+								</div>
+		
+							</div>
+						</div>
+		
+						<!--yand-->
+		
+						<div id="#yand" class="reviews-box">
+							<div class="reviews-box-btn">
+								<button id="reviews__prev-yand" aria-label="предыдущий" class="reviews-btn ">
+									<svg class="reviews-btn-svg" width="13" height="24" viewBox="0 0 13 24" fill="none"
+										xmlns="http://www.w3.org/2000/svg">
+										<path d="M9.5 0.75H12.5L3.5 12L12.5 23.25H9.5L0.5 12L9.5 0.75Z" fill="white" />
+									</svg>
+		
+								</button>
+								<button id="reviews__next-yand" aria-label="следующий" class="reviews-btn reviews__slick-next">
+									<svg class="reviews-btn-svg" width="13" height="24" viewBox="0 0 13 24" fill="none"
+										xmlns="http://www.w3.org/2000/svg">
+										<path d="M3.5 0.75H0.5L9.5 12L0.5 23.25H3.5L12.5 12L3.5 0.75Z" fill="white" />
+									</svg>
+		
+								</button>
+							</div>
+							<div id="reviews-slaider-yand" class="reviews-slaider">
+								<div>
+									<div class="reviews-slaider-box">
+										<img src="./assets/img/reivews/back.png" alt="" class="reviews-slaider--active">
+										<img src="./assets/img/reivews/reviews-yand-1.jpg" alt="" class="reviews-slaider-img">
+									</div>
+								</div>
+		
+								<div>
+									<div class="reviews-slaider-box">
+										<img src="./assets/img/reivews/back.png" alt="" class="reviews-slaider--active">
+										<img src="./assets/img/reivews/reviews-yand-2.jpg" alt="" class="reviews-slaider-img">
+									</div>
+								</div>
+		
+								<div>
+									<div class="reviews-slaider-box">
+										<img src="./assets/img/reivews/back.png" alt="" class="reviews-slaider--active">
+										<img src="./assets/img/reivews/reviews-yand-3.jpg" alt="" class="reviews-slaider-img">
+									</div>
+								</div>
+		
+								<div>
+									<div class="reviews-slaider-box">
+										<img src="./assets/img/reivews/back.png" alt="" class="reviews-slaider--active">
+										<img src="./assets/img/reivews/reviews-yand-4.jpg" alt="" class="reviews-slaider-img">
+									</div>
+								</div>
+		
+								<div>
+									<div class="reviews-slaider-box">
+										<img src="./assets/img/reivews/back.png" alt="" class="reviews-slaider--active">
+										<img src="./assets/img/reivews/reviews-yand-5.jpg" alt="" class="reviews-slaider-img">
+									</div>
+								</div>
+		
+								<div>
+									<div class="reviews-slaider-box">
+										<img src="./assets/img/reivews/back.png" alt="" class="reviews-slaider--active">
+										<img src="./assets/img/reivews/reviews-yand-6.jpg" alt="" class="reviews-slaider-img">
+									</div>
+								</div>
+		
+								<div>
+									<div class="reviews-slaider-box">
+										<img src="./assets/img/reivews/back.png" alt="" class="reviews-slaider--active">
+										<img src="./assets/img/reivews/reviews-yand-7.jpg" alt="" class="reviews-slaider-img">
+									</div>
+								</div>
+		
+								<div>
+									<div class="reviews-slaider-box">
+										<img src="./assets/img/reivews/back.png" alt="" class="reviews-slaider--active">
+										<img src="./assets/img/reivews/reviews-yand-8.jpg" alt="" class="reviews-slaider-img">
+									</div>
+								</div>
+		
+								<div>
+									<div class="reviews-slaider-box">
+										<img src="./assets/img/reivews/back.png" alt="" class="reviews-slaider--active">
+										<img src="./assets/img/reivews/reviews-yand-9.jpg" alt="" class="reviews-slaider-img">
+									</div>
+								</div>
+		
+								<div>
+									<div class="reviews-slaider-box">
+										<img src="./assets/img/reivews/back.png" alt="" class="reviews-slaider--active">
+										<img src="./assets/img/reivews/reviews-yand-10.jpg" alt="" class="reviews-slaider-img">
+									</div>
+								</div>
+		
+							</div>
+						</div>
+		
+						<!--tripadvisor-->
+						<div id="#tripadvisor" class="reviews-box">
+							<div class="reviews-box-btn">
+								<button id="reviews__prev-tripadvisor" aria-label="предыдущий" class="reviews-btn ">
+									<svg class="reviews-btn-svg" width="13" height="24" viewBox="0 0 13 24" fill="none"
+										xmlns="http://www.w3.org/2000/svg">
+										<path d="M9.5 0.75H12.5L3.5 12L12.5 23.25H9.5L0.5 12L9.5 0.75Z" fill="white" />
+									</svg>
+		
+								</button>
+								<button id="reviews__next-tripadvisor" aria-label="следующий"
+									class="reviews-btn reviews__slick-next">
+									<svg class="reviews-btn-svg" width="13" height="24" viewBox="0 0 13 24" fill="none"
+										xmlns="http://www.w3.org/2000/svg">
+										<path d="M3.5 0.75H0.5L9.5 12L0.5 23.25H3.5L12.5 12L3.5 0.75Z" fill="white" />
+									</svg>
+		
+								</button>
+							</div>
+							<div id="reviews-slaider-tripadvisor" class="reviews-slaider">
+								<div>
+									<div class="reviews-slaider-box">
+										<img src="./assets/img/reivews/back.png" alt="" class="reviews-slaider--active">
+										<img src="./assets/img/reivews/reviews-tripadvisor-1.jpg" alt=""
+											class="reviews-slaider-img">
+									</div>
+								</div>
+		
+								<div>
+									<div class="reviews-slaider-box">
+										<img src="./assets/img/reivews/back.png" alt="" class="reviews-slaider--active">
+										<img src="./assets/img/reivews/reviews-tripadvisor-2.jpg" alt=""
+											class="reviews-slaider-img">
+									</div>
+								</div>
+		
+								<div>
+									<div class="reviews-slaider-box">
+										<img src="./assets/img/reivews/back.png" alt="" class="reviews-slaider--active">
+										<img src="./assets/img/reivews/reviews-tripadvisor-3.jpg" alt=""
+											class="reviews-slaider-img">
+									</div>
+								</div>
+		
+								<div>
+									<div class="reviews-slaider-box">
+										<img src="./assets/img/reivews/back.png" alt="" class="reviews-slaider--active">
+										<img src="./assets/img/reivews/reviews-tripadvisor-4.jpg" alt=""
+											class="reviews-slaider-img">
+									</div>
+								</div>
+		
+								<div>
+									<div class="reviews-slaider-box">
+										<img src="./assets/img/reivews/back.png" alt="" class="reviews-slaider--active">
+										<img src="./assets/img/reivews/reviews-tripadvisor-5.jpg" alt=""
+											class="reviews-slaider-img">
+									</div>
+								</div>
+		
+								<div>
+									<div class="reviews-slaider-box">
+										<img src="./assets/img/reivews/back.png" alt="" class="reviews-slaider--active">
+										<img src="./assets/img/reivews/reviews-tripadvisor-6.jpg" alt=""
+											class="reviews-slaider-img">
+									</div>
+								</div>
+		
+								<div>
+									<div class="reviews-slaider-box">
+										<img src="./assets/img/reivews/back.png" alt="" class="reviews-slaider--active">
+										<img src="./assets/img/reivews/reviews-tripadvisor-7.jpg" alt=""
+											class="reviews-slaider-img">
+									</div>
+								</div>
+		
+								<div>
+									<div class="reviews-slaider-box">
+										<img src="./assets/img/reivews/back.png" alt="" class="reviews-slaider--active">
+										<img src="./assets/img/reivews/reviews-tripadvisor-8.jpg" alt=""
+											class="reviews-slaider-img">
+									</div>
+								</div>
+		
+								<div>
+									<div class="reviews-slaider-box">
+										<img src="./assets/img/reivews/back.png" alt="" class="reviews-slaider--active">
+										<img src="./assets/img/reivews/reviews-tripadvisor-9.jpg" alt=""
+											class="reviews-slaider-img">
+									</div>
+								</div>
+		
+								<div>
+									<div class="reviews-slaider-box">
+										<img src="./assets/img/reivews/back.png" alt="" class="reviews-slaider--active">
+										<img src="./assets/img/reivews/reviews-tripadvisor-10.jpg" alt=""
+											class="reviews-slaider-img">
+									</div>
+								</div>
+		
+							</div>
+						</div>
+		
+		
 					</div>
-					<button aria-label="ostrovok" class="reivews-btn">
+					<button aria-label="ostrovok" class="reivews-btn" data-reviews="ostrovok">
 						<img src="./assets/img/reivews/reivews-btn-2.png" alt="" class="reivews-btn-img">
 					</button>
 		
-					<button aria-label="101hotels" class="reivews-btn">
+					<button aria-label="101hotels" class="reivews-btn" data-reviews="hotels">
 						<img src="./assets/img/reivews/reivews-btn-3.png" alt="" class="reivews-btn-img">
 					</button>
 		
-					<button aria-label="yandex путешествие" class="reivews-btn">
+					<button aria-label="yandex путешествие" class="reivews-btn" data-reviews="yand">
 						<img src="./assets/img/reivews/reivews-btn-4.png" alt="" class="reivews-btn-img">
 					</button>
 		
-					<button aria-label="tripadvisor" class="reivews-btn">
+					<button aria-label="tripadvisor" class="reivews-btn" data-reviews="tripadvisor">
 						<img src="./assets/img/reivews/reivews-btn-5.png" alt="" class="reivews-btn-img">
 					</button>
 		
