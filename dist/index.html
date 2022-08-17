@@ -32,11 +32,21 @@
 		<header id="header" class="header header-padding">
 			<div class="container">
 				<div class="header-wrap d-flex justify-content-between align-items-center">
-					<div class="header-coll d-flex justify-content-start align-items-center">
+					<button aria-label="открыть меню"
+						class="header-open-menu d-lg-none d-flex align-items-center justify-content-center">
+						<svg class="header-open-svg" width="35" height="22" viewBox="0 0 35 22" fill="none"
+							xmlns="http://www.w3.org/2000/svg">
+							<rect width="35" height="4" fill="white" />
+							<rect y="18" width="35" height="4" fill="white" />
+							<rect y="9" width="23" height="4" fill="white" />
+						</svg>
+		
+					</button>
+					<div class="header-coll  d-flex justify-content-start align-items-center">
 						<a class="header-logo" href="#" aria-label="Главная">
 							<img class="logo-img" width="285" height="53" src="./assets/img/header/logo.svg" alt="">
 						</a>
-						<div class="header-map-box  d-flex justify-content-start align-items-center">
+						<div class="header-map-box d-none  d-lg-flex justify-content-start align-items-center">
 							<a class="header-map-icon" href="#" aria-label="карта">
 								<svg class="header-icon-svg" width="30" height="30" fill="#fff"
 									xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
@@ -50,7 +60,7 @@
 						</div>
 					</div>
 					<div class="header-coll d-flex justify-content-end align-items-center">
-						<div class="header-box-mess d-flex justify-content-center align-items-center">
+						<div class="header-box-mess d-lg-flex d-none justify-content-center align-items-center">
 							<a href="#" aria-label="telegram" class="heder-mess-link --telegram">
 								<svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
 									<path
@@ -95,21 +105,24 @@
 							</a>
 						</div>
 						<a href="tel:79939932368" aria-label="+7 (993) 993-23-68"
-							class="header-tell d-flex justify-content-end align-items-center">
+							class="header-tell d-flex justify-content-lg-end justify-content-center align-items-center">
 							<svg class="header-tell-svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
 								xmlns="http://www.w3.org/2000/svg">
 								<path
 									d="M10.1467 13.7598C11.5383 15.1716 13.2222 16.2616 15.08 16.9532L17.5933 14.9532C17.6678 14.9018 17.7562 14.8744 17.8467 14.8744C17.9371 14.8744 18.0255 14.9018 18.1 14.9532L22.7667 17.9598C22.9438 18.0663 23.0938 18.2126 23.2047 18.387C23.3157 18.5615 23.3845 18.7593 23.4059 18.9649C23.4272 19.1705 23.4004 19.3783 23.3277 19.5718C23.2549 19.7653 23.1382 19.9392 22.9867 20.0798L20.8 22.2398C20.4868 22.5492 20.102 22.7763 19.6797 22.9008C19.2574 23.0253 18.8109 23.0433 18.38 22.9532C14.0815 22.0654 10.1194 19.9862 6.94666 16.9532C3.84432 13.89 1.69751 9.99239 0.766663 5.73316C0.674707 5.30892 0.6939 4.86812 0.82238 4.45348C0.950861 4.03883 1.18427 3.66441 1.5 3.36649L3.76666 1.17983C3.90693 1.03568 4.07799 0.925143 4.26703 0.856478C4.45607 0.787813 4.65819 0.762805 4.85827 0.783325C5.05835 0.803846 5.25119 0.869364 5.42235 0.974973C5.59352 1.08058 5.73858 1.22355 5.84666 1.39316L8.95333 5.99983C9.00692 6.07216 9.03584 6.1598 9.03584 6.24983C9.03584 6.33985 9.00692 6.42749 8.95333 6.49983L6.90666 8.95983C7.61705 10.7805 8.72382 12.4201 10.1467 13.7598Z"
 									fill="white" />
 							</svg>
-							+7 (993) 993-23-68
+							<span class="header-tell-span d-none d-lg-block">
+								+7 (993) 993-23-68
+							</span>
+		
 						</a>
 					</div>
 				</div>
 			</div>
 		</header>
 		<main class="main">
-			<div class="main-plug">
+			<div class="main-plug d-lg-block d-none">
 				<div class="container">
 					<ul class="main-plug-list d-flex justify-content-between align-items-cender">
 						<li class="main-plug-inner">
@@ -174,7 +187,7 @@
 				<h3 class="title ratings-title text-center">
 					5 звезд по мнению наших гостей
 				</h3>
-				<div class="ratings-wrapp d-flex align-items-center justify-content-between">
+				<div class="ratings-wrapp d-flex align-items-center  justify-content-evenly">
 					<div class="ratings-box">
 						<img src="./assets/img/ratings/ratings-1.png" alt="" class="ratings-img">
 		
@@ -197,7 +210,8 @@
 		</section>
 		<section class="benefits benefits-padding">
 			<div class="container">
-				<div class="benefits-wrap d-flex align-items-center justify-content-between">
+				<div
+					class="benefits-wrap flex-wrap d-flex align-items-center justify-content-lg-between justify-content-evenly">
 		
 					<div class="benefits-box d-flex justify-content-start align-items-start">
 						<img width="50" height="50" src="./assets/img/benefits/benefits-1.svg" alt="" class="benefits-img">
@@ -239,7 +253,7 @@
 		</section>
 		<section class="room room-padding">
 			<div class="container">
-				<h3 class="title room-title text-center">
+				<h3 class="title room-title text-lg-center text-start">
 					Насладитесь проживанием в новом уютном отеле “45 Параллель”
 				</h3>
 				<div class="room-wrap">
@@ -352,7 +366,7 @@
 								<img width="24" height="24" src="./assets/img/room/room-row-17.svg" alt="" class="room-row-img">
 								Багажная комната
 							</div>
-							<div class="room-row-box">
+							<div class="room-row-box room-row-box--fix">
 								<img width="24" height="24" src="./assets/img/room/room-row-18.svg" alt="" class="room-row-img">
 								Переговорная комната
 							</div>
@@ -1161,7 +1175,7 @@
 							</p>
 						</div>
 					</div>
-					<div>
+					<div class="rooms-info-box-order">
 						<div class="rooms-info-box d-flex justify-content-start align-items-start">
 							<img width="50" height="50" src="./assets/img/rooms/rooms-info-2.svg" alt="" class="rooms-info-img">
 							<div class="rooms-info-coll">
@@ -1175,7 +1189,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="rooms-info-box d-flex justify-content-start align-items-start">
+					<div class="rooms-info-box  d-flex justify-content-start align-items-start">
 						<img width="50" height="50" src="./assets/img/rooms/rooms-info-3.svg" alt="" class="rooms-info-img">
 						<div class="rooms-info-coll">
 							<h3 class="rooms-info-box-title">
@@ -1190,7 +1204,7 @@
 				</div>
 			</div>
 		</section>
-		<section class="plug">
+		<section id="request" class="plug">
 			<div class="container">
 				<div class="plug-wrapp">
 					<h3 class="plug-title">
@@ -1213,7 +1227,7 @@
 				<h3 class="title restaurant-title text-center">
 					Все грани авторской кухни
 				</h3>
-				<div class="restaurant-row d-flex justify-content-between">
+				<div class="restaurant-row d-block d-lg-flex justify-content-between">
 		
 					<div class="restaurant-info-box d-flex justify-content-start align-items-start">
 						<img width="50" height="50" src="./assets/img/restaurant/restaurant-info-1.svg" alt=""
@@ -1321,19 +1335,23 @@
 					</div>
 		
 					<div class="restaurant-slaider-box">
-						<img src="./assets/img/restaurant/restaurant-slaider-4.jpg" alt="" class="restaurant-slaider-img">
+						<img src="./assets/img/restaurant/restaurant-slaider-4.jpg" alt=""
+							class="restaurant-slaider-img --width">
 					</div>
 		
 					<div class="restaurant-slaider-box">
-						<img src="./assets/img/restaurant/restaurant-slaider-5.jpg" alt="" class="restaurant-slaider-img">
+						<img src="./assets/img/restaurant/restaurant-slaider-5.jpg" alt=""
+							class="restaurant-slaider-img --width">
 					</div>
 		
 					<div class="restaurant-slaider-box">
-						<img src="./assets/img/restaurant/restaurant-slaider-6.jpg" alt="" class="restaurant-slaider-img">
+						<img src="./assets/img/restaurant/restaurant-slaider-6.jpg" alt=""
+							class="restaurant-slaider-img --width">
 					</div>
 		
 					<div class="restaurant-slaider-box">
-						<img src="./assets/img/restaurant/restaurant-slaider-7.jpg" alt="" class="restaurant-slaider-img">
+						<img src="./assets/img/restaurant/restaurant-slaider-7.jpg" alt=""
+							class="restaurant-slaider-img --width">
 					</div>
 		
 		
@@ -1349,10 +1367,10 @@
 				<p class="title-text location-title-text text-center">
 					Рядом с основной транспортной инфраструктурой города.
 				</p>
-				<div class="location-wrapp d-flex align-items-start justify-content-between">
+				<div class="location-wrapp d-lg-flex d-block align-items-start justify-content-between">
 					<div class="location-info-box d-flex justify-content-start align-items-start">
 						<img width="50" height="50" src="./assets/img/location/location-info-1.svg" alt=""
-							class="rooms-info-img">
+							class="rooms-info-img location-info-img">
 						<div class="location-info-coll">
 							<h3 class="location-info-box-title">
 								2 км.
@@ -1364,19 +1382,19 @@
 					</div>
 					<div class="location-info-box d-flex justify-content-start align-items-start">
 						<img width="50" height="50" src="./assets/img/location/location-info-2.svg" alt=""
-							class="rooms-info-img">
+							class="rooms-info-img location-info-img">
 						<div class="location-info-coll">
 							<h3 class="location-info-box-title">
 								3 км.
 							</h3>
-							<p class="location-info-box-text">
-								До Железнодорожного <br> вокзала «Краснодар-1».
+							<p class="location-info-box-text location-info-box-text--fix">
+								До Железнодорожного вокзала «Краснодар-1».
 							</p>
 						</div>
 					</div>
 					<div class="location-info-box d-flex justify-content-start align-items-start">
 						<img width="50" height="50" src="./assets/img/location/location-info-3.svg" alt=""
-							class="rooms-info-img">
+							class="rooms-info-img location-info-img">
 						<div class="location-info-coll">
 							<h3 class="location-info-box-title">
 								Без пробок
@@ -1388,13 +1406,16 @@
 					</div>
 				</div>
 				<div class="location-box-img">
-					<img width="1400" height="870" src="./assets/img/location/location.jpg" alt="" class="location-img">
+					<img width="1400" height="870" src="./assets/img/location/location.jpg" alt=""
+						class="location-img d-sm-block d-none">
+					<img width="1400" height="870" src="./assets/img/location/location-2.jpg" alt=""
+						class="location-img d-sm-none d-block">
 				</div>
 			</div>
 		</section>
 		<section class="transit transit-padding">
 			<div class="container">
-				<div class="transit-wrap d-flex align-items-start justify-content-between">
+				<div class="transit-wrap d-lg-flex d-block align-items-start justify-content-between">
 					<div class="transit-col">
 						<h3 class="transit-title">
 							Скидка 30% <br>
@@ -1430,49 +1451,51 @@
 				<p class=" kids-title-text text-center">
 					Мы сделаем все для того, чтобы ваш ребенок остался доволен.
 				</p>
-				<img width="1400" height="600" src="./assets/img/kids/kids.jpg" alt="" class="kids-img">
-				<div class="kids-wrap d-flex align-items-start justify-content-between">
-					<div class="kids-info-box d-flex justify-content-start align-items-start">
-						<img width="50" height="50" src="./assets/img/kids/kids-info-1.svg" alt="" class="kids-info-img">
-						<div class="kids-info-coll">
-							<h3 class="kids-info-box-title">
-								Отдых с детьми
-							</h3>
-							<p class="kids-info-box-text">
-								Предоставляется детская <br> кроватка / манеж / детские <br> туалетные принадлежности.
-								<a href="#popup-kids" aria-label="подробности" class="kids-link open-popup">
-									?
-								</a>
-							</p>
+				<div class="kids-container">
+					<img width="1400" height="600" src="./assets/img/kids/kids.jpg" alt="" class="kids-img">
+					<div class="kids-wrap d-lg-flex d-block align-items-start justify-content-between">
+						<div class="kids-info-box d-flex justify-content-start align-items-start">
+							<img width="50" height="50" src="./assets/img/kids/kids-info-1.svg" alt="" class="kids-info-img">
+							<div class="kids-info-coll">
+								<h3 class="kids-info-box-title">
+									Отдых с детьми
+								</h3>
+								<p class="kids-info-box-text">
+									Предоставляется детская <br> кроватка / манеж / детские <br> туалетные принадлежности.
+									<a href="#popup-kids" aria-label="подробности" class="kids-link open-popup">
+										?
+									</a>
+								</p>
+							</div>
 						</div>
-					</div>
-					<div class="kids-info-box d-flex justify-content-start align-items-start">
-						<img width="50" height="50" src="./assets/img/kids/kids-info-2.svg" alt="" class="kids-info-img">
-						<div class="kids-info-coll">
-							<h3 class="kids-info-box-title">
-								Детское меню
-							</h3>
-							<p class="kids-info-box-text">
-								Отдельное меню для детей <br> / детский стульчик / игры
-							</p>
+						<div class="kids-info-box d-flex justify-content-start align-items-start">
+							<img width="50" height="50" src="./assets/img/kids/kids-info-2.svg" alt="" class="kids-info-img">
+							<div class="kids-info-coll">
+								<h3 class="kids-info-box-title">
+									Детское меню
+								</h3>
+								<p class="kids-info-box-text">
+									Отдельное меню для детей <br> / детский стульчик / игры
+								</p>
+							</div>
 						</div>
-					</div>
-					<div class="kids-info-box d-flex justify-content-start align-items-start">
-						<img width="50" height="50" src="./assets/img/kids/kids-info-3.svg" alt="" class="kids-info-img">
-						<div class="kids-info-coll">
-							<h3 class="kids-info-box-title">
-								Развлечения
-							</h3>
-							<p class="kids-info-box-text">
-								По запросу предоставляются <br> в номер детская палатка «Вигвам»<br> и мягкие игрушки.
-							</p>
+						<div class="kids-info-box d-flex justify-content-start align-items-start">
+							<img width="50" height="50" src="./assets/img/kids/kids-info-3.svg" alt="" class="kids-info-img">
+							<div class="kids-info-coll">
+								<h3 class="kids-info-box-title">
+									Развлечения
+								</h3>
+								<p class="kids-info-box-text">
+									По запросу предоставляются <br> в номер детская палатка «Вигвам»<br> и мягкие игрушки.
+								</p>
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 		
 		</section>
-		<section class="plug">
+		<section id="request" class="plug">
 			<div class="container">
 				<div class="plug-wrapp">
 					<h3 class="plug-title">
@@ -1744,11 +1767,11 @@
 				<div class="reviews-wrapp">
 		
 					<button aria-label="bokking" class="reivews-btn active" data-reviews="booking">
-						<img src="./assets/img/reivews/reivews-btn-1.png" alt="" class="reivews-btn-img">
+						<img src="./assets/img/reivews/reivews-btn-1.png" alt="" class="reivews-btn-img d-sm-block d-none">
+						<img src="./assets/img/reivews/reivews-btn-1-mob.png" alt="" class="reivews-btn-img  d-sm-none d-block">
 					</button>
 		
 					<div class="reivews-slaider-containers">
-						<!--booking-->
 						<div id="#booking" class="reviews-box active">
 							<div class="reviews-box-btn">
 								<button id="reviews__prev-booking" aria-label="предыдущий" class="reviews-btn ">
@@ -1851,7 +1874,6 @@
 							</div>
 						</div>
 		
-						<!--ostrovok-->
 						<div id="#ostrovok" class="reviews-box">
 							<div class="reviews-box-btn">
 								<button id="reviews__prev-ostrovok" aria-label="предыдущий" class="reviews-btn ">
@@ -1940,7 +1962,7 @@
 							</div>
 						</div>
 		
-						<!--hotels-->
+		
 						<div id="#hotels" class="reviews-box">
 							<div class="reviews-box-btn">
 								<button id="reviews__prev-hotels" aria-label="предыдущий" class="reviews-btn ">
@@ -2005,7 +2027,7 @@
 							</div>
 						</div>
 		
-						<!--yand-->
+		
 		
 						<div id="#yand" class="reviews-box">
 							<div class="reviews-box-btn">
@@ -2098,7 +2120,7 @@
 							</div>
 						</div>
 		
-						<!--tripadvisor-->
+		
 						<div id="#tripadvisor" class="reviews-box">
 							<div class="reviews-box-btn">
 								<button id="reviews__prev-tripadvisor" aria-label="предыдущий" class="reviews-btn ">
@@ -2204,24 +2226,35 @@
 		
 					</div>
 					<button aria-label="ostrovok" class="reivews-btn" data-reviews="ostrovok">
-						<img src="./assets/img/reivews/reivews-btn-2.png" alt="" class="reivews-btn-img">
+						<img src="./assets/img/reivews/reivews-btn-2.png" alt="" class="reivews-btn-img d-sm-block d-none">
+						<img src="./assets/img/reivews/reivews-btn-2-mob.png" alt="" class="reivews-btn-img  d-sm-none d-block">
 					</button>
 		
 					<button aria-label="101hotels" class="reivews-btn" data-reviews="hotels">
-						<img src="./assets/img/reivews/reivews-btn-3.png" alt="" class="reivews-btn-img">
+						<img src="./assets/img/reivews/reivews-btn-3.png" alt="" class="reivews-btn-img d-sm-block d-none">
+						<img src="./assets/img/reivews/reivews-btn-3-mob.png" alt="" class="reivews-btn-img  d-sm-none d-block">
 					</button>
 		
-					<button aria-label="yandex путешествие" class="reivews-btn" data-reviews="yand">
-						<img src="./assets/img/reivews/reivews-btn-4.png" alt="" class="reivews-btn-img">
+					<button aria-label="yandex путешествие" class="reivews-btn reivews-btn-position" data-reviews="yand">
+						<img src="./assets/img/reivews/reivews-btn-4.png" alt="" class="reivews-btn-img d-sm-block d-none">
+						<img src="./assets/img/reivews/reivews-btn-4-mob.png" alt="" class="reivews-btn-img  d-sm-none d-block">
 					</button>
 		
 					<button aria-label="tripadvisor" class="reivews-btn" data-reviews="tripadvisor">
-						<img src="./assets/img/reivews/reivews-btn-5.png" alt="" class="reivews-btn-img">
+						<img src="./assets/img/reivews/reivews-btn-5.png" alt="" class="reivews-btn-img d-sm-block d-none">
+						<img src="./assets/img/reivews/reivews-btn-5-mob.png" alt="" class="reivews-btn-img  d-sm-none d-block">
 					</button>
 		
 		
 				</div>
+				<div class="reviews-contaier d-flex flex-column d-lg-none align-items-center justify-content-center">
+					<img width="30" height="30" src="./assets/img/reivews/rew-1.svg" alt="" class="reviews-container-img">
+					<p class="reviews-contaier-text text-center">
+						Кликните по агрегатору, чтобы посмотреть отзывы.
+					</p>
+				</div>
 			</div>
+		
 		</section>
 		<section class="promo promo-padding">
 			<div class="container">
@@ -2318,7 +2351,7 @@
 				</div>
 			</div>
 		</section>
-		<section class="plug">
+		<section id="request" class="plug">
 			<div class="container">
 				<div class="plug-wrapp">
 					<h3 class="plug-title">
@@ -2341,16 +2374,25 @@
 		</div>
 		<footer class="footer footer-padding">
 			<div class="container">
-				<div class="footer-wrapp d-flex align-items-center justify-content-between">
+				<div class="footer-wrapp d-flex flex-column flex-lg-row   align-items-center justify-content-between">
 					<div class="footer-coll">
 						<a href="#" class="footer-logo">
 							<img class="logo-img" width="300" height="56" src="./assets/img/header/logo.svg" alt="">
 						</a>
-						<div class="footer-text">
+						<div class="footer-text  d-none d-lg-block">
 							© 2020 «45 параллель» ресторан-отель
 						</div>
-						<div class="footer-text">
+						<div class="footer-text  d-none d-lg-block">
 							Официальный сайт
+						</div>
+		
+					</div>
+					<div class="footer-head-mob d-block d-lg-none">
+						<div class="footer-text">
+							г. Краснодар,ул.
+						</div>
+						<div class="footer-text ">
+							Индустриальная 10 стр. 1
 						</div>
 					</div>
 					<div class="footer-mess">
@@ -2406,9 +2448,10 @@
 		
 						</a>
 					</div>
+		
 					<div class="footer-coll-2">
 						<a href="tel:79939932368" aria-label="+7 (993) 993-23-68"
-							class="footer-tell d-flex justify-content-end align-items-center">
+							class="footer-tell d-flex justify-content-center justify-content-lg-end align-items-center">
 							<svg class="footer-tell-svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
 								xmlns="http://www.w3.org/2000/svg">
 								<path
@@ -2418,7 +2461,7 @@
 							+7 (993) 993-23-68
 						</a>
 						<a href="mailto:info@45parallel-hotel.ru" aria-label="+7 (993) 993-23-68"
-							class="footer-maill d-flex justify-content-end align-items-center">
+							class="footer-maill d-flex justify-content-center justify-content-lg-end align-items-center">
 		
 							<svg class="footer-mail-svg" width="22" height="18" viewBox="0 0 22 18" fill="none"
 								xmlns="http://www.w3.org/2000/svg">
@@ -2429,6 +2472,14 @@
 		
 							info@45parallel-hotel.ru
 						</a>
+					</div>
+					<div class="footer-mob-block d-block d-lg-none">
+						<div class="footer-text">
+							© 2020 «45 параллель» ресторан-отель
+						</div>
+						<div class="footer-text  ">
+							Официальный сайт
+						</div>
 					</div>
 				</div>
 			</div>
@@ -2447,7 +2498,7 @@
 					Наверх
 				</div>
 			</a>
-			<a href="#product" class="menu-link  scroll-link">
+			<a href="#request" class="menu-link  scroll-link">
 				<img src="./assets/img/menu-fix-1.svg" alt="" class="menu-fix-img">
 				<div class="menu-text text-center">
 					Забронировать
@@ -2468,6 +2519,7 @@
 			</a>
 		</div>
 	</div>
+	
 	<div id="popup-kids" class="popup-kids mfp-hide ">
 		<button aria-label="закрыть окно" class="popup-close popup-kids-btn">
 			<svg width="16" height="16" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">

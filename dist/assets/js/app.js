@@ -116,7 +116,31 @@ $(function () {
 		asNavFor: '.interior-slaider-head',
 		dots: false,
 		arrows: false,
-		focusOnSelect: true
+		focusOnSelect: true,
+		responsive: [
+			{
+				breakpoint: 992,
+				settings: {
+					slidesToShow: 3,
+					slidesToScroll: 1,
+					dots: false,
+					arrows: false,
+				}
+			},
+			{
+				breakpoint: 660,
+				settings: {
+					slidesToShow: 2,
+					slidesToScroll: 1,
+					dots: true,
+					arrows: false,
+					dots: false,
+					arrows: false,
+				}
+			}
+
+
+		]
 	});
 
 	$("#reviews-slaider-booking").slick({
@@ -175,6 +199,7 @@ $(function () {
 						rows: 0,
 						nextArrow: $(`#reviews__next-${dataAttr}`),
 						prevArrow: $(`#reviews__prev-${dataAttr}`),
+
 					});
 				})
 			})
@@ -190,5 +215,24 @@ $(function () {
 		arrows: true,
 		nextArrow: $(".promo__slick-next"),
 		prevArrow: $(".promo__slick-prev"),
+		responsive: [
+			{
+				breakpoint: 1400,
+				settings: {
+					slidesToShow: 2,
+					slidesToScroll: 1,
+					dots: false,
+				}
+			},
+			{
+				breakpoint: 992,
+				settings: {
+					slidesToShow: 1,
+					slidesToScroll: 1
+				}
+			}
+
+
+		]
 	});
 })
